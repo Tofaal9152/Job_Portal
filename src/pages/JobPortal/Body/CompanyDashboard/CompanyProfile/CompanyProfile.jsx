@@ -15,7 +15,7 @@ const CompanyProfile = () => {
     description: "We Make!",
   });
 
-  const handleImageChange = (event) => {
+  const handleImageChangee = (event) => {
     const file = event.target.files[0];
     if (file) {
       const reader = new FileReader();
@@ -65,7 +65,7 @@ const CompanyProfile = () => {
                 type="file"
                 id="fileInput"
                 className="hidden"
-                onChange={handleImageChange}
+                onChange={handleImageChangee}
               />
             </label>
           </div>
