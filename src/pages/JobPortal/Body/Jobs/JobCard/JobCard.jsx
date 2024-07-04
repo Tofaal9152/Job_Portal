@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 import { FaBookmark } from "react-icons/fa";
 import { BsDot } from "react-icons/bs";
 import Modal from "../ViewDeatilModal.jsx/Modal";
@@ -76,4 +77,7 @@ const JobCard = ({ job }) => {
   );
 };
 
+JobCard.propTypes = {
+  job: PropTypes.string.isRequired, // Define the type and whether it's required
+};
 export default JobCard;

@@ -1,5 +1,4 @@
 import { useLayoutEffect, useRef } from "react";
-import backgroundImage from "../../../../../assets/hiro.jpg";
 import { jobsCompanies } from "../../../../../Constant";
 import { useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";

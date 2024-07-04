@@ -1,52 +1,39 @@
-import React, { useState } from "react";
-import { BsFillSignpostFill } from "react-icons/bs";
+// import { useState } from "react";
 import { TiTick } from "react-icons/ti";
-// import { GiCrossMark } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-
-
-
-
+import PropTypes from "prop-types";
 const Modal = ({ isVisible, onClose }) => {
-  const [jobData, setJobData] = useState({
-    name: "",
-    location: "",
-    description: "",
-    type: "Full-Time",
-    onsite: true,
-    salary: "$",
-  });
+  // const [jobData, setJobData] = useState({
+  //   name: "",
+  //   location: "",
+  //   description: "",
+  //   type: "Full-Time",
+  //   onsite: true,
+  //   salary: "$",
+  // });
 
-  const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
+  // const handleInputChange = (e) => {
+  //   const { name, value, type, checked } = e.target;
+  //   if (type === "checkbox") {
+  //     setJobData({ ...jobData, [name]: checked });
+  //   } else {
+  //     setJobData({ ...jobData, [name]: value });
+  //   }
+  // };
 
-    // Handle checkbox input
-    if (type === "checkbox") {
-      setJobData({ ...jobData, [name]: checked });
-    } else {
-      setJobData({ ...jobData, [name]: value });
-    }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Job Data:", jobData);
-
-    // Perform further actions like submitting the data to backend, etc.
-
-    // Clear form fields
-    setJobData({
-      name: "",
-      location: "",
-      description: "",
-      type: "Full-Time",
-      onsite: true,
-      salary: "$",
-    });
-
-    // Close the modal
-    onClose();
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Job Data:", jobData);
+  //   setJobData({
+  //     name: "",
+  //     location: "",
+  //     description: "",
+  //     type: "Full-Time",
+  //     onsite: true,
+  //     salary: "$",
+  //   });
+  //   onClose();
+  // };
 
   if (!isVisible) {
     return null;
@@ -118,5 +105,10 @@ const Modal = ({ isVisible, onClose }) => {
     </div>
   );
 };
-
+Modal.propTypes = {
+  isVisible: PropTypes.bool.isRequired, // Define the type and whether it's required
+};
+Modal.propTypes = {
+  onClose: PropTypes.bool.isRequired, // Define the type and whether it's required
+};
 export default Modal;

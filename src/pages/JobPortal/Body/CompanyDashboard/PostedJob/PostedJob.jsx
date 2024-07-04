@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from "react";
+import  {  useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative, Pagination, Navigation } from "swiper/modules";
 import FormModal from '../../ApplicantDashboard/FormModal/FormModal'

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BsFillSignpostFill } from "react-icons/bs";
-
+import PropTypes from "prop-types";
 const Modal = ({ isVisible, onClose }) => {
   const [jobData, setJobData] = useState({
     name: "",
@@ -188,5 +188,10 @@ const Modal = ({ isVisible, onClose }) => {
     </div>
   );
 };
-
+Modal.propTypes = {
+  isVisible: PropTypes.bool.isRequired, // Define the type and whether it's required
+};
+Modal.propTypes = {
+  onClose: PropTypes.bool.isRequired, // Define the type and whether it's required
+};
 export default Modal;

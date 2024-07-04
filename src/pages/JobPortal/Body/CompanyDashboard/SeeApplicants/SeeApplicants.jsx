@@ -1,5 +1,5 @@
 
-import React, { forwardRef, useState } from "react";
+import  { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative, Pagination, Navigation } from "swiper/modules";
 import Applicantsmodal from '../ApplicantsModal/ApplicantsModal'
@@ -10,8 +10,6 @@ import "swiper/css/navigation";
 import {
   Applicants1,
   Applicants2,
-  FeaturedJobsgroup1,
-  FeaturedJobsgroup2,
 } from "../../../../../Constant";
 import { MdLocationPin } from "react-icons/md";
 import { FaClock } from "react-icons/fa6";

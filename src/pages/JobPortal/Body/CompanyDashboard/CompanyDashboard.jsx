@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import FormModal from "./FormModal/FormModal";
 import PostedJob from "./PostedJob/PostedJob";
 import style from "../../../../style";

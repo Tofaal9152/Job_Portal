@@ -1,6 +1,6 @@
 
 import { BsFillSignpostFill } from "react-icons/bs";
-
+import PropTypes from "prop-types";
 const Modal = ({ isVisible, onClose, job }) => {
   if (!isVisible) {
     return null;
@@ -57,5 +57,13 @@ const Modal = ({ isVisible, onClose, job }) => {
     </div>
   );
 };
-
+Modal.propTypes = {
+  job: PropTypes.string.isRequired, // Define the type and whether it's required
+};
+Modal.propTypes = {
+  isVisible: PropTypes.string.isRequired, // Define the type and whether it's required
+};
+Modal.propTypes = {
+  onClose: PropTypes.string.isRequired, // Define the type and whether it's required
+};
 export default Modal;

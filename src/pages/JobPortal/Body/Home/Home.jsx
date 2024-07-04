@@ -1,4 +1,4 @@
-import React from "react";
+
 import HeroHome from "./HeroHome/HeroHome";
 import Navbar from "../../Navbar/Navbar";
 import AboutUs from "./AboutUs/AboutUs";

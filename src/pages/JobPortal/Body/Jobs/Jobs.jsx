@@ -8,14 +8,14 @@ const Jobs = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [jobType, setJobType] = useState("");
   const [location, setLocation] = useState("");
-  const [experienceLevel, setExperienceLevel] = useState("");
+  // const [experienceLevel, setExperienceLevel] = useState("");
 
 
   const filteredJobs = JobCard1.filter((job) => {
     return (
       (jobType ? job.type === jobType : true) &&
       (location ? job.location === location : true) &&
-      (experienceLevel ? job.experienceLevel === experienceLevel : true) &&
+      // (experienceLevel ? job.experienceLevel === experienceLevel : true) &&
       (searchTerm
         ? job.title.toLowerCase().includes(searchTerm.toLowerCase())
         : true)
@@ -69,16 +69,6 @@ const Jobs = () => {
               <option value="Tangail">Tangail</option>
               <option value="Sylhet">Sylhet</option>
             </select>
-            {/* <select
-            className="border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#9773df]"
-            value={experienceLevel}
-            onChange={(e) => setExperienceLevel(e.target.value)}
-          >
-            <option value="">All Experience Levels</option>
-            <option value="Entry Level">Entry Level</option>
-            <option value="Mid Level">Mid Level</option>
-            <option value="Senior Level">Senior Level</option>
-          </select> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center">
             {filteredJobs.map((job, index) => {

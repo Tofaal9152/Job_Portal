@@ -1,4 +1,5 @@
-const Modal = ({ isVisible, onClose}) => {
+import PropTypes from "prop-types";
+const Modal = ({ isVisible, onClose }) => {
   if (!isVisible) {
     return null;
   }
@@ -48,25 +49,15 @@ const Modal = ({ isVisible, onClose}) => {
             <span className="text-xs text-[#5E6368]">{jobDetails.time}</span>
           </div>
         </div>
-        {/* <div className="flex items-center justify-center space-x-4 mt-4">
-          <button
-            type="button"
-            className="bg-[#76c3ed] flex items-center justify-center hover:bg-[#69afd4] rounded-md px-3 py-2 cursor-pointer text-md font-semibold text-white"
-          >
-            <BsFillSignpostFill size={25} />
-            <span>Apply Now</span>
-          </button>
-          <button
-            type="button"
-            className="bg-[#76c3ed] flex items-center justify-center hover:bg-[#69afd4] rounded-md px-3 py-2 cursor-pointer text-md font-semibold text-white"
-          >
-            <BsFillSignpostFill size={25} />
-            <span>Apply Now</span>
-          </button>
-        </div> */}
       </div>
     </div>
   );
+};
+Modal.propTypes = {
+  isVisible: PropTypes.bool.isRequired, // Define the type and whether it's required
+};
+Modal.propTypes = {
+  onClose: PropTypes.bool.isRequired, // Define the type and whether it's required
 };
 
 export default Modal;
