@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Jobapplied from "./Job applied/Jobapplied";
 // import FormModal from "./FormModal/FormModal";
 import ApplicantNavbar from "./ApplicantNavbar/ApplicantNavbar";

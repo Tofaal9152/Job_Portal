@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Logo from "../../../../../assets/loginAnimation.gif";
 import Profile from "../../../../../assets/About.jpeg";
 import { GiHamburgerMenu } from "react-icons/gi";

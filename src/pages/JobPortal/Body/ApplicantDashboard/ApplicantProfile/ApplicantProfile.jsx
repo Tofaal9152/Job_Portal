@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import style from "../../../../../style";
 import ApplicantNavbar from "../ApplicantNavbar/ApplicantNavbar";
 import Avater from "../../../../../assets/About.jpeg";
