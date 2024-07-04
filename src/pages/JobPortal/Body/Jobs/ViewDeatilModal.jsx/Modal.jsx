@@ -1,4 +1,4 @@
-import React from "react";
+
 import { BsFillSignpostFill } from "react-icons/bs";
 
 const Modal = ({ isVisible, onClose, job }) => {

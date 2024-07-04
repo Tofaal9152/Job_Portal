@@ -1,4 +1,4 @@
-import React from "react";
+
 import Logo from "../../../assets/loginAnimation.gif";
 // Icons
 import { FaFacebook } from "react-icons/fa";
@@ -26,7 +26,7 @@ const Footer = () => {
               </div>
               <p className="text-base leading-relaxed text-white mt-7">
                 Job Portal is your go-to online destination for connecting top
-                talent with leading employers. Whether you're searching for your
+                talent with leading employers. Whether your searching for your
                 next career move or seeking to hire exceptional professionals.
               </p>
             </div>

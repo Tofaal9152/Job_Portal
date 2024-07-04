@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import backgroundImage from "../../../../../assets/hiro.jpg";
 import { jobsCompanies } from "../../../../../Constant";
 import { useNavigate } from "react-router-dom";
@@ -27,13 +27,7 @@ const HeroHome = () => {
   }, []);
   // Main
   const navigate = useNavigate();
-  const ctaStyle = {
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${backgroundImage})`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    textAlign: "center",
-    padding: "100px 0",
-  };
+ 
 
   return (
     <>

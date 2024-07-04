@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import JobCard from "./JobCard/JobCard";
 import { JobCard1 } from "../../../../Constant";
 import style from "../../../../style";
